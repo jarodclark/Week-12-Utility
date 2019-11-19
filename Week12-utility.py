@@ -28,3 +28,25 @@ def FindWordCount(List, string):
         if List[i] == string:
             count += 1
     return count
+
+def ScoreFinder(players, scores, string):
+    players_string = ''
+    for i in range(len(players)):
+        players_string += players[i]
+        players_string += ' '
+    players_string_lower = players_string.lower()
+    players_list = players_string_lower.split()
+    check = False
+    for i in players_list:
+        if string in players_list:
+            check = True
+        else:
+            check = False
+    if check == True:
+        for i in range(len(players_list)):
+            if players_list[i] == string:
+                index = i
+        score = players[index] + ' got a score of ' + str(scores[index]) 
+    else:
+        score = 'player not found'
+    PrintOutput(score)
