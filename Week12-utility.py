@@ -21,3 +21,10 @@ def UpdateString(string1, string2, index_integer):
     for i in range(len(string1_list)):
         string1_string += string1_list[i]
     PrintOutput(string1_string)
+
+def FindWordCount(List, string):
+    count = 0
+    for i in range(len(List)):
+        if List[i] == string:
+            count += 1
+    return count
