@@ -3,5 +3,6 @@
 # CSCI 102 - Section B
 # Week 11 - Part B
 
-
+def PrintOutput(string):
+    print('OUTPUT', string)
             
