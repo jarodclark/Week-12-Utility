@@ -11,3 +11,13 @@ def LoadFile(filename):
         file_read = file.read()
     file_list = file_read.split('\n')
     return file_list
+
+def UpdateString(string1, string2, index_integer):
+    string1_list = list(string1)
+    for i in range(len(string1_list)):
+        if i == index_integer:
+            string1_list[i] = string2
+    string1_string = ''
+    for i in range(len(string1_list)):
+        string1_string += string1_list[i]
+    PrintOutput(string1_string)
