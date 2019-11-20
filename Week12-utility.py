@@ -65,3 +65,10 @@ def Intersection(list1, list2):
     
     intersect_list = list(one_set & two_set)
     return intersect_list
+
+def NotIn(list1, list2):
+    one_set = set(list1)
+    two_set = set(list2)
+
+    newlist = list(one_set - two_set)
+    return newlist
