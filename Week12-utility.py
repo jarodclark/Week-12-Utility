@@ -58,3 +58,10 @@ def Union(list1, list2):
     return_list = []
     return_list = list(one_set | two_set)
     return return_list
+
+def Intersection(list1, list2):
+    one_set = set(list1)
+    two_set = set(list2)
+    
+    intersect_list = list(one_set & two_set)
+    return intersect_list
