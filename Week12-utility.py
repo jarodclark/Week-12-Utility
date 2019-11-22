@@ -31,6 +31,7 @@ def FindWordCount(List, string):
 
 def ScoreFinder(players, scores, string):
     players_string = ''
+    string = string.lower()
     for i in range(len(players)):
         players_string += players[i]
         players_string += ' '
@@ -72,3 +73,4 @@ def NotIn(list1, list2):
 
     newlist = list(one_set - two_set)
     return newlist
+
